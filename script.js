@@ -1,6 +1,7 @@
 function changeColor(id){
 	for(let i=1;i<=3;i++){
 		if (i !== id) {
+			// Change its color
 			document.getElementById("square" + i).style.backgroundColor = "#6F4E37"; //coffee
 		}
 	}
