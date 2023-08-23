@@ -1,27 +1,14 @@
-//your JS code here. If required.
-function changeOtherSquaresColor(square) {
-  var squares = document.getElementsByClassName('square');
-  for (var i = 0; i < squares.length; i++) {
-    if (squares[i] !== square) {
-      squares[i].classList.add('highlight');
-    }
-  }
+function changeColor(id){
+	for(let i=1;i<=3;i++){
+		if (i !== id) {
+			document.getElementById("square" + i).style.backgroundColor = "#6F4E37"; //coffee
+		}
+	}
 }
-
-function changeColorOnClick(square) {
-  var squares = document.getElementsByClassName('square');
-  if (square === squares[0] || square === squares[2]) {
-    for (var i = 0; i < squares.length; i++) {
-      if (squares[i] !== square) {
-        squares[i].classList.add('highlight');
-      }
-    }
-  }
-}
-
-function resetSquaresColor() {
-  var squares = document.getElementsByClassName('square');
-  for (var i = 0; i < squares.length; i++) {
-    squares[i].classList.remove('highlight');
-  }
+function resetColor(id){
+	for(let i=1;i<=3;i++){
+		if (i !== id) {
+			document.getElementById("square" + i).style.backgroundColor = "#E6E6FA"; //lavender
+		}
+	}
 }
